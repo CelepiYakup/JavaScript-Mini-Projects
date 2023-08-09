@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif 'poppins';
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+    background-image: linear-gradient(80deg, rgb(5,124,172), rgb(199,10,114));
+    overflow: hidden;
+}
+
+/* Background Effect CSS Start */
+#up{
+    position: absolute;
+    left: 0;
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgb(241, 147, 7), rgb(83, 13, 139));
+    filter: blur(80px);
+    animation: down 20s infinite;
+}
+
+#down{
+    position: absolute;
+    right: 0;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgb(44, 194, 30), rgb(14, 202, 177));
+    filter: blur(80px);
+    animation: up 20s infinite;
+}
+#right{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgb(44, 194, 30), rgb(14, 202, 177));
+    filter: blur(80px);
+    animation: left 20s infinite;
+}
+#left{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgb(21, 46, 116), rgb(218, 221, 26));
+    filter: blur(80px);
+    animation: right 20s infinite;
+}
+@keyframes down{
+    0%, 100%{
+        top: -100px;
+    }
+    70%{
+        top: 700px;
+    }
+}
+@keyframes top{
+    0%, 100%{
+        bottom: -100px;
+    }
+    70%{
+        bottom: 700px;
+    }
+}
+@keyframes right{
+    0%, 100%{
+        left: -100px;
+    }
+    70%{
+        left: 700px;
+    }
+}
+@keyframes left{
+    0%, 100%{
+        right: -100px;
+    }
+    70%{
+        right: 700px;
+    }
+}
+
+
+/* Background Effect CSS End */
+
+/* Container Expand Cards Start */
+.container-expan{
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.8s ease-in;
+
+}
+
+.panel h3{
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    margin: 0px;
+    opacity: 0;
+
+}
+
+.panel.first{
+    flex: 5;
+}
+
+.panel.first h3 {
+
+    text-decoration: underline;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 600px){
+    .container-expan{
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
+/* Container Expand Cards End */
