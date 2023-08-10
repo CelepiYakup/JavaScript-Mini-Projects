@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, rgb(5, 124, 172), rgb(235, 91, 8), rgb(199, 10, 114));
+
+}
+
+/* Headline Start */
+.container-0 {
+    position: absolute;
+    margin-top: 40px;
+    color: rgb(113, 4, 185);
+    font-size: 160%;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Headline End */
+
+/* Art Box Start */
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.row {
+    background-color: rgb(24, 6, 6);
+    height: 720px;
+    width: 540px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+    gap: 10px;
+    border-radius: 25px;
+    box-shadow: -1px 1px 208px 76px rgba(200, 15, 230, 0.89);
+    -webkit-box-shadow: -1px 1px 208px 76px rgba(165, 230, 15, 0.281);
+    -moz-box-shadow: -1px 1px 208px 76px rgba(82, 129, 38, 0.89);
+
+}
+
+.row div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Art Box End */
+
+/* Button Start */
+button {
+    width: 100%;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    padding: 18px 0;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    background-size: 400%;
+}
+
+button:hover {
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+/* Button End */
+
+/* Shapes Start */
+.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.rhombus {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+}
+
+.frame {
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+.quad-circle {
+    clip-path: circle(100% at 0 100%);
+}
+
+.random-shape-1 {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.random-shape-2 {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.random-shape-3 {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.triangle {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+/* Shapes End */
