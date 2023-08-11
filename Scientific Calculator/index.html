@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientefic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        
+            <form  name="forms" class="for" >
+                <input name="display" class="text" id="display" type="text">
+                <div class="btns">
+                    <input class="button" type="button" value="7" onclick="num('7')">
+                    <input class="button" type="button" value="8" onclick="num('8')">
+                    <input class="button" type="button" value="9" onclick="num('9')">
+                    <input class="button" type="button" value="DEL" onclick="del()">
+                    <input class="button" type="button" value="AC" onclick="ac()">
+                    <br>
+                    <input class="button" type="button" value="4" onclick="num('4')">
+                    <input class="button" type="button" value="5" onclick="num('5')">
+                    <input class="button" type="button" value="6" onclick="num('6')">
+                    <input class="button" type="button" value="-" onclick="num('-')">
+                    <input class="button" type="button" value="+" onclick="num('+')">
+                    <br>
+                    <input class="button" type="button" value="1" onclick="num('1')">
+                    <input class="button" type="button" value="2" onclick="num('2')">
+                    <input class="button" type="button" value="3" onclick="num('3')">
+                    <input class="button" type="button" value="x" onclick="num('*')">
+                    <input class="button" type="button" value="/" onclick="num('/')">
+                    <br>
+                    <input class="button" type="button" value="0" onclick="num('0')">
+                    <input class="button" type="button" value="." onclick="num('.')">
+                    <input class="button" type="button" value="(" onclick="num('(')">
+                    <input class="button" type="button" value=")" onclick="num(')')">
+                    <input class="button" type="button" value="&#x221A" onclick="sqrt()">
+                    <br>
+                    <input class="button" type="button" value="%" onclick="per()">
+                    <input class="button" type="button" value="X!" onclick="fact()">
+                    <input class="button" type="button" value="rad" onclick="rad()">
+                    <input class="button" type="button" value="x²" onclick="square()">
+                    <input class="button" type="button" value="log" onclick="logarithm()">
+                    <br>
+                    <input class="button" type="button" value="ln" onclick="ln()">
+                    <input class="button" type="button" value="sin" onclick="sin()">
+                    <input class="button" type="button" value="cos" onclick="cos()">
+                    <input class="button" type="button" value="tan" onclick="tan()">
+                    <input class="button" type="button" value="cot" onclick="cot()">
+                    <br>
+                    <div class="bottom-btns">
+                        <input class="button" type="button" value="&#960" onclick="pi()">
+                        <input class="button" type="button" value="00" onclick="num('00')">
+                        <input class="button" id="equaly" type="button" value="=" onclick="equal('=')">
+                    </div>
+    
+    
+    
+                </div>
+            </form>
+      
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
