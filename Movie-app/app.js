@@ -27,7 +27,7 @@ async function commuteData(url) {
 }
 
 async function commuteAndSearch(url){
-    const data = await commuteData(url);
+    const data = await commuteData(urltoLowerCase());
     if (data && data.results); {
         showResults(data.results);
     }
