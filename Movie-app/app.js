@@ -1,4 +1,4 @@
-const apiKey = "Your-API-KEY";
+const apiKey = "Your-API-KEY"; // Use your own API key
 
 const imgApi = "https://image.tmdb.org/t/p/w1280";
 
