@@ -1,0 +1,163 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@300;500;700&display=swap');
+
+ *{
+    margin: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+ }
+ a{
+    color: #fff;
+    text-decoration: none;
+    
+ }
+
+ body{
+    color: #fff;
+    
+    background-image: linear-gradient(45deg, rgb(0,255,255),rgb(255,255,42));
+    padding: 1.5rem;
+ }
+ 
+ .search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+    margin: 15px 0 30px 0 ;
+
+ }
+
+ .search-box form{
+
+    display: flex;
+    max-width: 400px;
+
+ }
+ .search-box input{
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border-radius: 7px 0 0 7px;
+    border: none;
+    background-color: #d3d3d3e6;
+
+ }
+ 
+ .search-box .search-btn{
+
+    width: 120px;
+    background:linear-gradient(180deg, #03a9f4, #212121, #212121, #03a9f4);
+    border-radius: 0 7px 7px 0;
+    border: 1px solid rgba(211,211,211,0.5);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: 0;
+ }
+
+ .search-box .search-btn:hover{
+   background-color: #03a9f4;
+   border: 1px solid #212121;
+ }
+
+ .container{
+   width: 100%;
+   max-height: 100vh;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .container .card{
+   position: relative;
+   font-size: 14px;
+   border: 1px solid rgba(255, 255, 255, 0.959);
+   border-radius: 4px;
+   line-height: 20px;
+   width: 285px;
+   height: 360px;
+   overflow: hidden;
+
+ }
+
+ .container .card .card-content{
+
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+   bottom: 0;
+   left: 0;
+   padding: 100px 10px 5px;
+   transition: all 0.5s ease;  
+}
+
+.container.card .card-content .card-header{
+   padding: 8px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.container .card .card-content .card-btn{
+   background-color: #10064b;
+   color: #fff;
+   cursor: pointer;
+   padding: 4px 6px;
+   border: 1px solid rgba(255,255,255,0.5);
+   transition: all 0.5s ease;
+   position:relative;
+   left: 65%;
+   border-radius: 10px;
+}
+
+.container .card .card-content .info{
+
+   max-height: 0;
+   opacity: 0;
+   border-top: 1px solid rgba(255,255,255,0.5);
+   overflow: hidden;
+   transition: all 0.5s ease;
+
+}
+
+.container .card:hover{
+   cursor: pointer;
+}
+
+.container .card:hover .card-content{
+   background-image: linear-gradient(180deg, rgba(51,55,69,0), #101528 48%);
+}
+
+
+.container .card:hover .card-btn{
+   background-color: #03a9f4;
+   border-color: #03a9f4;
+}
+
+.container .card:hover .info{
+   max-height: 200px;
+   opacity: 1;
+   padding: 8px 0;
+}
+#result{
+   display: flex;
+   max-width: 1200px;
+   gap: 15px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+@media screen and (max-width: 550px) {
+   .search-box{
+       justify-content: center;
+   }
+
+   .search-box form{
+       margin-top: 10px;
+   }
+
+}
