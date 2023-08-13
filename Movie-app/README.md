@@ -1,6 +1,6 @@
 Responsive Movie-Website 
 ### For Practicing.
-
+ <h2>Important issue you should use own <b>API</b> Key you can take TMDB website.</h2>
 <br/>
 
 ![responsiveimg](https://github.com/CelepiYakup/JavaScript-Projects/assets/135622873/caa2155a-f218-41d5-b1e8-655da67c658c)
