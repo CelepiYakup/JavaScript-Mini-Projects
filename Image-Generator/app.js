@@ -1,6 +1,6 @@
 const APIKey = "Use your own API KEY"
 
-const maxImages = 2;
+const maxImages = 4;
 
 let selectedImageNumber = null;
 
